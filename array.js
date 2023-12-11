@@ -86,3 +86,31 @@ for(let u of r){
 for(let u in r){
   console.log(r[u])
 }
+
+// creating the object
+let person = {
+    name: 'John',
+    age: 30,
+    address: {
+      city: 'New York',
+      zip: '10001'
+    }
+  };
+
+// accessing the data
+console.log(person.name); // Output: 'John'
+console.log(person.address.city); // Output: 'New York'
+
+// MODIFYING THE DATA
+person.age = 31;
+console.log(person); // Output: { name: 'John', age: 31, address: { city: 'New York', zip: '10001' } }
+// Adding a new property
+person.job = 'Developer'; 
+// Deleting the 'address' property
+delete person.address; 
+
+// ITERATION OF THE OBJECTS
+for (let key in person) {
+    console.log(key + ': ' + person[key]);
+  }  
+
