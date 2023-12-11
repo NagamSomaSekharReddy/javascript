@@ -53,7 +53,7 @@ arr.sort(compare1)
 console.log(arr);
 
 //splice;
-let k = arr.splice(2, 4, 54, 65, 76, 87);
+let k = arr.splice(2, 4, 54, 65, 76, 87);//position,no of elements delete ,adding elements
 console.log(k);
 console.log(arr);
 //slice in arrays;
